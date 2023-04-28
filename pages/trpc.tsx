@@ -1,4 +1,4 @@
 import { createTRPCReact } from "@trpc/react-query";
 
 // Creating TRCP HOC
-export const trpc = createTRPCReact<any>();
+export const trpc: any = createTRPCReact<any>();

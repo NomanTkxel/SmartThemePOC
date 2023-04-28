@@ -7,7 +7,7 @@ import { trpc } from "pages/trpc";
 
 const AccountsForm: MyPage = (props) => {
   const [message, setMessage] = useState("");
-  const [profImage, setProfImage] = useState({});
+  const [profImage, setProfImage]: any = useState({});
 
   // Setting Up TRPC Instance
   const userData: any = trpc.user.useMutation();
@@ -30,6 +30,7 @@ const AccountsForm: MyPage = (props) => {
         });
       };
       reader.readAsDataURL(profImage);
+      setMessage("Form Submitted");
     },
     validationSchema: yup.object({
       firstname: yup.string().trim().required("First Name is required"),
