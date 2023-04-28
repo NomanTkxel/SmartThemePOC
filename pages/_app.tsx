@@ -4,7 +4,7 @@ import { MyAppProps } from "components/types";
 import { Layouts } from "components/layouts/Layouts";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { httpBatchLink } from "@trpc/client";
-import { trpc } from "./trpc";
+import { trpc } from "../components/trpc";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: MyAppProps) {

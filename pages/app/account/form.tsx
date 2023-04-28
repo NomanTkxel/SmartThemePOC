@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 
 import { MyPage } from "components/types";
-import { trpc } from "pages/trpc";
+import { trpc } from "components/trpc";
 
 const AccountsForm: MyPage = (props) => {
   const [message, setMessage] = useState("");
